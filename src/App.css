@@ -5,14 +5,14 @@
   --first-colour: #4cff9d;
   --second-colour: white;
   --third-colour: black;
-  --fourth-colour: rgb(18, 18, 18);
+  --fourth-colour: rgb(21, 21, 21);
   --fifth-colour: rgb(194, 194, 194);
 
 
   --div-padding: 12px;
   --div-margin: 12px;
 
-  --fs-xl: clamp(3.5rem, 5vw + 1rem, 9rem);
+  --fs-xl: clamp(3.5rem, 7vw + 1rem, 12rem);
   --fs-l: clamp(2rem, 3vw + 1rem, 5rem);
   --fs-800: 2rem;
   --fs-600: 1.5rem;
@@ -83,7 +83,7 @@ h1, h2, h3 , h4, h5 {
   justify-content: flex-end;
   font-size: calc(10px + 2vmin);
   color: var(--second-colour);
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 
 .hero {
@@ -94,8 +94,7 @@ h1, h2, h3 , h4, h5 {
 
 
 .hero h1 {
-  /**font-size: var(--fs-xl);**/
-  font-size: 150px;
+  font-size: var(--fs-xl);
   line-height: 1.1em;
   text-shadow: 2px 2px 12px #0000008a
 }
@@ -150,6 +149,33 @@ h1, h2, h3 , h4, h5 {
 .process-section-dark {
   padding: 40px;
   color: var(--second-colour);
+}
+
+.image-section {
+  height: 500px;
+}
+
+.small-text-block {
+  color: var(--second-colour);
+  padding-right: 48px;
+}
+
+.small-text-block-header {
+  color: var(--first-colour);
+}
+
+.testimonial-block {
+  color: white;
+  background-color: var(--fourth-colour);
+  padding: 24px;
+  margin: 24px;
+  border-radius: 4px;
+}
+
+
+.testimonial-block h3 {
+  font-size: 5em;
+  color: var(--first-colour);
 }
 
 /**.process-header {
