@@ -1,27 +1,24 @@
 import './App.css';
+import NavBar from './Components/NavBar';
+import Hero from './Sections/Hero';
+import About from './Sections/About';
+import Services from './Sections/Services';
+import TextBlock from './Components/TextBlock';
+import Process from './Sections/Process';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      <NavBar />
+      <Hero />
+      <About />
+      <Services />
+      <TextBlock 
+        section={"HOW WE WORK"} 
+        header={"OUR WINNING METHODOLOGY"} 
+        info={"Through a blend of strategic planning, creative innovation, and meticulous execution, we deliver results that exceed expectations."} 
+      />
+      <Process />
     </div>
   );
 }

@@ -1,5 +1,70 @@
-.App {
+/**.App {
   text-align: center;
+}**/
+:root {
+  --first-colour: #4cff9d;
+  --second-colour: white;
+  --third-colour: black;
+  --fourth-colour: rgb(10, 10, 10);
+  --fifth-colour: rgb(194, 194, 194);
+
+
+  --div-padding: 12px;
+  --div-margin: 12px;
+
+  --fs-xl: clamp(3.5rem, 5vw + 1rem, 9rem);
+  --fs-l: clamp(2rem, 3vw + 1rem, 5rem);
+  --fs-800: 2rem;
+  --fs-600: 1.5rem;
+  --fs-400: 1rem;
+}
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  box-sizing: border-box;
+  background: var(--third-colour);
+}
+
+.section {
+  padding: 100px 0px;
+}
+
+.second-section {
+  background-color: var(--fourth-colour);
+}
+
+h1, h2, h3 , h4, h5 {
+  font-family: 'Anton', sans-serif;
+}
+
+.navbar {
+  background: var(--third-colour);
+  color: var(--second-colour);
+}
+
+.navbar a {
+  color: var(--second-colour);
+}
+.navbar a:hover {
+  color: var(--first-colour);
+}
+
+.nav-link {
+  margin-left: 24px;
+}
+
+.nav-link:hover{
+  color: var(--first-colour);
+}
+
+.collapse {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .App-logo {
@@ -7,25 +72,99 @@
   pointer-events: none;
 }
 
-.App-header {
-  background-color: #282c34;
+.hero {
+  background-color: var(--third-colour);
   min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: calc(10px + 2vmin);
+  color: var(--second-colour);
+  padding-bottom: 100px;
+}
+
+.hero h1 {
+  font-size: var(--fs-xl);
+  line-height: 1em;
+}
+
+.about h4 {
+  border-bottom: solid 2px;
+  margin-bottom: 1em;
+  color: var(--first-colour);
+}
+
+.about {
+  color: var(--second-colour);
+}
+
+.section-header {
+  font-size: var(--fs-l);
+  line-height: 1.1em;
+}
+
+.services {
+  color: white;
+}
+
+.services-header {
+  color: var(--first-colour);
+}
+
+.text-block {
+  color: var(--second-colour);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  padding: 0px 500px;
+}
+
+.text-block-title {
+  border-bottom: solid 1px;
+}
+
+.text-block-header {
+  margin: 24px 0px;
+}
+
+.process-section-light {
+  padding: 40px;
+  background: var(--first-colour);
+}
+
+.process-section-dark {
+  padding: 40px;
+  color: var(--second-colour);
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--first-colour);
 }
 
-.heart {
-  color: #ff0000;
+.full-width-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.small {
-  font-size: 0.75rem;
+button {
+  padding: 8px 20px;
+  background: var(--third-colour);
+  border: solid;
+  border-radius: 24px;
+  color: var(--secondary-colour);
+  font-size: 20px;
+}
+
+button:hover{
+  background: var(--second-colour);
+  color: var(--third-colour);
+}
+
+span {
+  color: var(--fifth-colour);
 }
