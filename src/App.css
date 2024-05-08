@@ -5,7 +5,7 @@
   --first-colour: #4cff9d;
   --second-colour: white;
   --third-colour: black;
-  --fourth-colour: rgb(10, 10, 10);
+  --fourth-colour: rgb(18, 18, 18);
   --fifth-colour: rgb(194, 194, 194);
 
 
@@ -45,6 +45,7 @@ h1, h2, h3 , h4, h5 {
 .navbar {
   background: var(--third-colour);
   color: var(--second-colour);
+  padding: 20px 0px;
 }
 
 .navbar a {
@@ -74,7 +75,7 @@ h1, h2, h3 , h4, h5 {
 
 .hero {
   background-color: var(--third-colour);
-  min-height: 100vh;
+  min-height: 95vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -82,12 +83,21 @@ h1, h2, h3 , h4, h5 {
   justify-content: flex-end;
   font-size: calc(10px + 2vmin);
   color: var(--second-colour);
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
+.hero {
+  background-image: url('img/hero-01.png');
+  background-size:  cover;
+  background-position: center;
+}
+
+
 .hero h1 {
-  font-size: var(--fs-xl);
-  line-height: 1em;
+  /**font-size: var(--fs-xl);**/
+  font-size: 150px;
+  line-height: 1.1em;
+  text-shadow: 2px 2px 12px #0000008a
 }
 
 .about h4 {
@@ -125,6 +135,7 @@ h1, h2, h3 , h4, h5 {
 
 .text-block-title {
   border-bottom: solid 1px;
+  color: var(--first-colour);
 }
 
 .text-block-header {
@@ -141,6 +152,10 @@ h1, h2, h3 , h4, h5 {
   color: var(--second-colour);
 }
 
+/**.process-header {
+  font-size: 10em;
+}**/
+
 .App-link {
   color: var(--first-colour);
 }
@@ -153,18 +168,18 @@ h1, h2, h3 , h4, h5 {
 
 button {
   padding: 8px 20px;
-  background: var(--third-colour);
-  border: solid;
+  background: rgba(0, 0, 0, 0);
+  border: solid var(--first-colour);
   border-radius: 24px;
   color: var(--secondary-colour);
   font-size: 20px;
 }
 
 button:hover{
-  background: var(--second-colour);
+  background: var(--first-colour);
   color: var(--third-colour);
 }
 
 span {
-  color: var(--fifth-colour);
+  color: var(--first-colour);
 }

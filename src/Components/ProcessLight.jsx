@@ -4,7 +4,7 @@ function ProcessLight ({number, header, info, image}) {
             <div className="container">
                 <div className="row">
                     <div className="col-3">
-                        <h2 className="section-header process-header-light">{number}</h2>
+                        <h2 className="section-header process-header">{number}</h2>
                     </div>
                     <div className="col-6">
                         <h4 className="section-header">{header}</h4>
