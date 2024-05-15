@@ -9,6 +9,9 @@ import ImageSection from './Sections/ImageSection';
 import Strategies from './Sections/Strategies';
 import ContactCallToAction from './Sections/ContactCallToAction';
 import Testimonials from './Sections/Testimonials';
+import FAQ from './Sections/FAQ';
+import Contact from './Sections/Contact';
+import Footer from './Sections/Footer';
 
 function App() {
   return (
@@ -49,7 +52,13 @@ function App() {
       />
 
       <Testimonials />
+
+      <FAQ />
+
+      <Contact />
       
+      <Footer />
+
     </div>
   );
 }
