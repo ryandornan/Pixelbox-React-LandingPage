@@ -5,7 +5,7 @@ function Footer () {
                 <div className="row footer-row">
                     <div className="col-6">
                         <div className="col-8">
-                            <h3 className="section-header pb-3">GROW YOUR BRAND BEYOND BOUNDARIES</h3>
+                            <h3 className="section-header pb-3">PIXELBOX STUDIO</h3>
                             <p>© Copyright 2024</p>
 
                         </div>
