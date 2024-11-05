@@ -33,7 +33,7 @@ function App() {
 
       <Process />
 
-      <ImageSection />
+      {/*<ImageSection />*/}
 
       <TextBlock 
         section={"STRATEGIES"} 
