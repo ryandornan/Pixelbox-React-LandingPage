@@ -285,11 +285,14 @@ textarea.form-control {
 }
 
 .footer {
-  color: white;
+  background-color: var(--third-colour);
+  color: var(--second-colour);
+  padding: 40px 0;
 }
 
 .footer-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -301,11 +304,19 @@ textarea.form-control {
 .footer-link {
   color: var(--second-colour);
   text-decoration: none;
+  margin-bottom: 8px;
 }
 
-.footer h4 {
-  text-decoration: none;
+.footer-link:hover {
+  color: var(--first-colour);
+  text-decoration: underline;
 }
+
+.section-header {
+  font-size: 1.5rem;
+  color: var(--second-colour);
+}
+
 
 button {
   padding: 8px 20px;

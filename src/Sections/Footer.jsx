@@ -1,34 +1,36 @@
-function Footer () {
+function Footer() {
     return (
         <div className="container-full section footer">
             <div className="container">
                 <div className="row footer-row">
-                    <div className="col-6">
-                        <div className="col-8">
-                            <h3 className="section-header pb-3">PIXELBOX STUDIO</h3>
-                            <p>© Copyright 2024</p>
+                    {/* Pixelbox Studio Section */}
+                    <div className="col-12 col-md-6 mb-4 mb-md-0">
+                        <h3 className="section-header pb-3">PIXELBOX STUDIO</h3>
+                        <p>© Copyright 2024</p>
+                    </div>
 
-                        </div>
-                    </div>
-                    <div className="col-3 d-flex footer-column">
+                    {/* Follow Us Section */}
+                    <div className="col-12 col-md-3 mb-4 mb-md-0 footer-column">
                         <h4>FOLLOW US</h4>
-                        <a className="footer-link">LinkedIn</a>
-                        <a className="footer-link">Instagram</a>
-                        <a className="footer-link">Facebook</a>
+                        <a className="footer-link" href="#">LinkedIn</a>
+                        <a className="footer-link" href="#">Instagram</a>
+                        <a className="footer-link" href="#">Facebook</a>
                     </div>
-                    <div className="col-3 d-flex footer-column">
-                        <a className="footer-link" href="#">
-                            <h4>BACK TO TOP</h4>
-                        </a>
-                        <a className="footer-link" href="about">About</a>
-                        <a className="footer-link" href="services">Services</a>
-                        <a className="footer-link" href="strategy">Strategy</a>
-                        <a className="footer-link" href="contact">Contact</a>
+
+                    {/* Back to Top Section */}
+                    <div className="col-12 col-md-3 footer-column">
+                        <h4>
+                            <a className="footer-link" href="#">BACK TO TOP</a>
+                        </h4>
+                        <a className="footer-link" href="#about">About</a>
+                        <a className="footer-link" href="#services">Services</a>
+                        <a className="footer-link" href="#strategy">Strategy</a>
+                        <a className="footer-link" href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Footer
+export default Footer;
