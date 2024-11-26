@@ -15,7 +15,7 @@ function FAQ () {
                         </div>
                     </div>
                     <div className="col-12 col-md-6">
-                        <div className="accordion" id="accordionExample">
+                        <div className="accordion" id="accordion">
                             <div className="accordion-item">
                                 <h2 className="accordion-header">
                                 <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">

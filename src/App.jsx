@@ -38,7 +38,7 @@ function App() {
       <TextBlock 
         section={"STRATEGIES"} 
         header={"UNVEILING THE STRATEGIES"} 
-        info={"Our meticulously curated collection of strategies and tactics, meticulously designed to propel your brand forward in the digital realm."} 
+        info={"Our meticulously curated collection of strategies and tactics, meticulously designed to propel your brand forward."} 
       />
 
       <Strategies />

@@ -1,17 +1,11 @@
-/**.App {
-  text-align: center;
-}**/
 :root {
-  --first-colour: #4cff9d;
+  --first-colour: #1ffc83;
   --second-colour: white;
   --third-colour: black;
   --fourth-colour: rgb(13, 13, 13);
   --fifth-colour: rgb(194, 194, 194);
-
-
   --div-padding: 12px;
   --div-margin: 12px;
-
   --fs-xl: clamp(3.5rem, 7vw + 1rem, 12rem);
   --fs-l: clamp(2rem, 3vw + 1rem, 5rem);
   --fs-800: 2rem;
@@ -64,7 +58,7 @@ h1, h2, h3 , h4, h5 {
   margin-left: 24px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: var(--first-colour);
 }
 
@@ -93,15 +87,14 @@ h1, h2, h3 , h4, h5 {
 
 .hero {
   background-image: url('img/hero-01.png');
-  background-size:  cover;
+  background-size: cover;
   background-position: center;
 }
-
 
 .hero h1 {
   font-size: var(--fs-xl);
   line-height: 1.1em;
-  text-shadow: 2px 2px 12px #0000008a
+  text-shadow: 2px 2px 12px #0000008a;
 }
 
 .about h4 {
@@ -112,6 +105,26 @@ h1, h2, h3 , h4, h5 {
 
 .about {
   color: var(--second-colour);
+}
+
+.about-image {
+  width: 500px;
+  max-width: 100%; 
+  height: auto; 
+  margin: 0 auto; 
+  display: block; 
+}
+
+@media (max-width: 1024px) {
+  .about-image {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-image {
+    width: 300px;
+  }
 }
 
 .section-header {
@@ -161,6 +174,12 @@ h1, h2, h3 , h4, h5 {
   align-items: stretch;
 }
 
+.process-image {
+  width: 200px; 
+  height: 200px;
+  object-fit: cover; 
+}
+
 .image-section {
   height: 500px;
 }
@@ -181,7 +200,6 @@ h1, h2, h3 , h4, h5 {
   border-radius: 4px;
 }
 
-
 .testimonial-block h3 {
   font-size: 5em;
   color: var(--first-colour);
@@ -197,10 +215,6 @@ h1, h2, h3 , h4, h5 {
   display: flex;
   flex-direction: column;
 }
-
-/**.process-header {
-  font-size: 10em;
-}**/
 
 .App-link {
   color: var(--first-colour);
@@ -224,6 +238,10 @@ accordion-color {
   margin-top: 60px;
 }
 
+.contact-item {
+  margin-bottom: 16px;
+}
+
 .contact-input {
   margin-bottom: 16px;
 }
@@ -233,17 +251,44 @@ accordion-color {
   border: solid 1px var(--first-colour);
   padding: 12px;
   color: white;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
-input.form-control::placeholder {
-  color: rgb(134, 134, 134); /* Ensure contrast against the background */
+input.form-control::placeholder,
+textarea.form-control::placeholder {
+  color: rgb(134, 134, 134);
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+.btn-primary {
+  background: var(--first-colour); 
+  color: var(--third-colour); 
+  border: none;
+  padding: 12px 16px; 
+  font-size: 16px; 
+  border-radius: 4px; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--second-colour); 
+  color: var(--third-colour); 
+}
+
+.btn-primary:focus {
+  outline: none; 
+  box-shadow: 0 0 8px var(--first-colour); 
 }
 
 .footer {
   color: white;
 }
 
-.footer-row{
+.footer-row {
   display: flex;
   justify-content: space-between;
 }
@@ -271,11 +316,88 @@ button {
   font-size: 20px;
 }
 
-button:hover{
+button:hover {
   background: var(--first-colour);
   color: var(--third-colour);
 }
 
 span {
   color: var(--first-colour);
+}
+
+.accordion {
+  background: var(--third-colour);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  background: var(--third-colour);
+  border-radius: 8px;
+}
+
+.accordion-button {
+  background: var(--third-colour);
+  color: var(--first-colour);
+  border: none;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:hover {
+  background: var(--fourth-colour);
+  color: var(--second-colour);
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--third-colour);
+  color: var(--first-colour);
+  box-shadow: none;
+}
+
+.accordion-button:after {
+  content: '';
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid var(--first-colour);
+  border-bottom: 2px solid var(--first-colour);
+  transform: rotate(45deg);
+  margin-left: auto;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(-135deg);
+}
+
+.accordion-button:hover:after {
+  border-color: var(--second-colour);
+}
+
+.accordion-body {
+  background: var(--fourth-colour);
+  color: var(--second-colour);
+  padding: 16px;
+  border-top: 1px solid var(--first-colour);
+  border-radius: 8px;
+}
+
+.accordion,
+.accordion-item,
+.accordion-header {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.accordion-item {
+  margin-bottom: 16px;
 }

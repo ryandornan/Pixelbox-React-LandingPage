@@ -11,7 +11,7 @@ function ProcessLight ({number, header, info, image}) {
                         <p>{info}</p>
                     </div>
                     <div className="col-12 col-lg-3 d-none d-lg-block">
-                        <img src={image} alt="" className="full-width-image"/>
+                    <img src={image} alt="Process Step" className="process-image" />
                     </div>
                 </div>
             </div>

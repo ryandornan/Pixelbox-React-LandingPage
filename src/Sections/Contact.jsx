@@ -3,6 +3,7 @@ function Contact() {
         <div className="container-full section second-section contact" id="contact">
             <div className="container">
                 <div className="row">
+                    {/* Left Section */}
                     <div className="col-12 col-md-6">
                         <h2 className="section-header pb-3">
                             GET IN TOUCH 
@@ -13,7 +14,7 @@ function Contact() {
                         <div className="contact-items">
                             <div className="contact-item mt-3">
                                 <p>E-Mail</p>
-                                <h4>info@ryandornan.com</h4>
+                                <h4>hello@pixelbox.com</h4>
                             </div>
                             <div className="contact-item mt-3">
                                 <p>Phone</p>
@@ -21,6 +22,8 @@ function Contact() {
                             </div>
                         </div>
                     </div>
+
+                    {/* Right Section */}
                     <div className="col-12 col-md-6">
                         <h2 className="section-header pb-3">CONNECT WITH US</h2>
                         <p className="pb-3">Fill in your details and let's kickstart the conversation!</p>
@@ -41,7 +44,16 @@ function Contact() {
 
                         <div className="row contact-input">
                             <div className="col">
-                                <textarea className="form-control" placeholder="Message" aria-label="Message" rows=""></textarea>
+                                <textarea className="form-control" placeholder="Message" aria-label="Message" rows="4"></textarea>
+                            </div>
+                        </div>
+
+                        {/* Add Send Button */}
+                        <div className="row contact-input">
+                            <div className="col">
+                                <button className="btn btn-primary w-100" type="submit">
+                                    Send
+                                </button>
                             </div>
                         </div>
                     </div>
