@@ -312,11 +312,6 @@ textarea.form-control {
   text-decoration: underline;
 }
 
-.section-header {
-  font-size: 1.5rem;
-  color: var(--second-colour);
-}
-
 
 button {
   padding: 8px 20px;
